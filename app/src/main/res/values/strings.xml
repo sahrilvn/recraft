@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Recraft</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Community</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="profile">Profile</string>
+    <string name="Search">Search</string>
+    <string name="text_splash">“Pencemaran lingkungan adalah penyakit tak terobati, mari kita cegah”</string>
+</resources>
