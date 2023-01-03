@@ -6,4 +6,14 @@
     <string name="profile">Profile</string>
     <string name="Search">Search</string>
     <string name="text_splash">“Pencemaran lingkungan adalah penyakit tak terobati, mari kita cegah”</string>
+    <string name="txtMenu">Edukasi</string>
+    <string name="txtEvent">Event</string>
+    <string name="txtTutorial">Tutorial</string>
+    <string name="txtKomunitas">Komunitas</string>
+    <string name="txtPoints">Points</string>
+    <string name="txtProduk">Produk</string>
+    <string name="txtPencarianPopuler">Pencarian Populer :</string>
+    <string name="txtMengenalLimbah">Mengenal Limbah</string>
+    <string name="txtKerajinanLimbah">Kerajinan Limbah Plastik</string>
+    <string name="txtDampakLimbah">Dampak Limbah Tekstil</string>
 </resources>

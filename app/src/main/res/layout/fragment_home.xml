@@ -1,157 +1,223 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeFragment">
+    android:background="@color/white">
 
-
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnPoint"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="200"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginLeft="25dp"
+        app:backgroundTint="@color/pine"
+        android:textColor="@color/white"/>
+    <RelativeLayout
+        android:layout_below="@id/btnPoint"
+        android:id="@+id/rlMenu"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="250dp"
+        android:elevation="5dp"
+        android:background="@drawable/radius_box"
+        android:padding="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp">
 
-        <TableLayout
-            android:layout_width="310dp"
-            android:layout_height="250dp"
-            android:layout_margin="50dp"
-            tools:layout_editor_absoluteX="48dp"
-            tools:layout_editor_absoluteY="65dp">
+        <ImageView
+            android:id="@+id/imgEdukasi"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/edukasi"/>
+        <TextView
+            android:id="@+id/txtEdukasi"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/txtMenu"
+            android:layout_below="@+id/imgEdukasi"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            />
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp"
-                android:gravity="center"
-                android:orientation="vertical">
+        <ImageView
+            android:id="@+id/imgEvent"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/event"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/txtEvent"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/txtEvent"
+            android:layout_below="@+id/imgEvent"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical">
+        <ImageView
+            android:id="@+id/imgTutorial"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/tutorial"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:id="@+id/txtTutorial"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/txtTutorial"
+            android:layout_below="@+id/imgEvent"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            />
 
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/imgKomunitas"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/komunitas"
+            android:layout_below="@+id/txtEdukasi"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/txtKomunitas"
+            android:layout_below="@+id/imgKomunitas"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            />
 
-                        <ImageView
-                            android:id="@+id/edukasi"
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
-                            android:src="@drawable/edukasi"
-                            tools:ignore="MissingConstraints" />
+        <ImageView
+            android:id="@+id/imgPoints"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/points"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txtEvent"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/txtPoints"
+            android:layout_below="@+id/imgPoints"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            />
 
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                </LinearLayout>
+        <ImageView
+            android:id="@+id/imgProduk"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/produk"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txtTutorial"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/txtProduk"
+            android:layout_below="@+id/imgProduk"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlMenu"
+        android:layout_marginTop="20dp">
 
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/btnPencarianPopuler"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@color/pine"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="@string/txtPencarianPopuler"/>
 
-                        <ImageView
-                            android:id="@+id/event"
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
-                            android:src="@drawable/event"
-                            tools:ignore="MissingConstraints" />
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:id="@+id/imgPopuler1"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:src="@drawable/img"
+            android:layout_below="@+id/btnPencarianPopuler"/>
 
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                </LinearLayout>
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:id="@+id/imgPopuler2"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:src="@drawable/img_1"
+            android:layout_below="@+id/imgPopuler1"/>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:id="@+id/imgPopuler3"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:src="@drawable/img_2"
+            android:layout_below="@+id/imgPopuler2"/>
 
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/txtMengenalLimbah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnPencarianPopuler"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:text="@string/txtMengenalLimbah" />
 
-                        <ImageView
-                            android:id="@+id/tutorial"
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
-                            android:src="@drawable/tutorial"
-                            tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/txtKerajinanLimbah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgPopuler1"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:text="@string/txtKerajinanLimbah" />
 
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                </LinearLayout>
+        <TextView
+            android:id="@+id/txtDampakLimbah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgPopuler2"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:text="@string/txtDampakLimbah" />
 
-            </TableRow>
+    </RelativeLayout>
 
-            <TableRow
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical">
 
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <ImageView
-                            android:id="@+id/komunitas"
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
-                            android:src="@drawable/komunitas"
-                            tools:ignore="MissingConstraints" />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <ImageView
-                            android:id="@+id/points"
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
-                            android:src="@drawable/points"
-                            tools:ignore="MissingConstraints" />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <ImageView
-                            android:id="@+id/produk"
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
-                            android:src="@drawable/produk"
-                            tools:ignore="MissingConstraints" />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                </LinearLayout>
-
-            </TableRow>
-
-        </TableLayout>
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
