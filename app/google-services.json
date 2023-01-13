@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "65893557781",
+    "project_id": "db-recraft",
+    "storage_bucket": "db-recraft.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:65893557781:android:50f91887e5b87691f4501c",
+        "android_client_info": {
+          "package_name": "com.example.recraft"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "65893557781-srnbbe6gkeq3fgl88hpo0bptoe8cu5cu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYSaZ19sdKh4byVj_jgv1088g2zSlgj3o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "65893557781-srnbbe6gkeq3fgl88hpo0bptoe8cu5cu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -5,47 +5,108 @@
     android:layout_width="match_parent"
     android:padding="20dp"
     android:layout_height="wrap_content"
-    android:layout_marginTop="200dp"
+    android:layout_marginTop="20dp"
     tools:context=".edukasi">
 
     <TextView
-        android:id="@+id/selamat_datang"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="cursive"
+        android:text="EDUKASI"
+        android:textSize="40dp"
         android:gravity="center"
-        android:text="Selamat Datang"
-        android:textColor="@color/merah"
-        android:textSize="50dp" />
+        android:textStyle="bold"
+        android:id="@+id/tvEdukasi"/>
 
-    <EditText
-        android:id="@+id/inputan_email"
-        android:layout_marginTop="30dp"
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:id="@+id/imgEdukasi"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:src="@drawable/img_1"
+        android:layout_below="@+id/tvEdukasi"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:id="@+id/imgEdukasi1"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:src="@drawable/img"
+        android:layout_below="@+id/imgEdukasi"/>
+
+    <TextView
+        android:id="@+id/txtMengenalLimbah"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Email"
-        android:layout_below="@+id/selamat_datang"
-        />
+        android:layout_below="@id/tvEdukasi"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:text="@string/txtMengenalLimbah" />
 
-    <EditText
-        android:id="@+id/inputan_password"
+    <TextView
+        android:id="@+id/tvBahayaLimbah"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Password"
-        android:layout_below="@+id/inputan_email"
-        />
+        android:layout_below="@id/imgEdukasi"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:text="Bahaya Limbah" />
 
-    <Button
-        android:id="@+id/btn"
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:id="@+id/imgEdukasi2"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:src="@drawable/img_1"
+        android:layout_below="@+id/imgEdukasi1"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:id="@+id/imgEdukasi3"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:src="@drawable/img"
+        android:layout_below="@+id/imgEdukasi2"/>
+
+    <TextView
+        android:id="@+id/txtJenis"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="LOGIN"
-        android:layout_below="@+id/inputan_password"/>
+        android:layout_below="@id/imgEdukasi1"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:text="Jenis-Jenis Limbah" />
 
-    <Button
+    <TextView
+        android:id="@+id/tvDaurUlang"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="GOOGLE"
-        android:layout_below="@+id/btn"/>
+        android:layout_below="@id/imgEdukasi2"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:text="Mengenal Daur Ulang Limbah" />
 
 </RelativeLayout>
